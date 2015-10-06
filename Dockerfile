@@ -7,8 +7,13 @@ EXPOSE 8080
 #For add-apt-repository command
 RUN apt-get install -y software-properties-common
 
-# Update the repository and install Mongo Server
-RUN         apt-get update && apt-get install -y mongodb-org
+# Install MongoDB
+RUN \
+  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
+  echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' > /etc/apt/sources.list.d/mongodb.list && \
+  apt-get update && \
+  apt-get install -y mongodb-org && \
+  rm -rf /var/lib/apt/lists/*
 
 # Expose Mongo port 4567
 EXPOSE      4567
