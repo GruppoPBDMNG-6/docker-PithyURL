@@ -4,6 +4,8 @@ FROM ubuntu:latest
 #ports
 EXPOSE 8080
 EXPOSE 4567
+EXPOSE 27017
+EXPOSE 28017
 
 #For add-apt-repository command
 RUN apt-get install -y software-properties-common
@@ -21,6 +23,15 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | te
 RUN echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 RUN apt-get update
+
+# Define mountable directories.
+VOLUME ["/data/db"]
+
+# Define working directory.
+WORKDIR /data
+
+# Define default command.
+CMD ["mongod"]
 
 #Install JDK 8
 RUN echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections
