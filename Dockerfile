@@ -3,6 +3,7 @@ FROM ubuntu:latest
 
 #ports
 EXPOSE 8080
+EXPOSE 4567
 
 #For add-apt-repository command
 RUN apt-get install -y software-properties-common
@@ -14,12 +15,6 @@ RUN \
   apt-get update && \
   apt-get install -y mongodb-org && \
   rm -rf /var/lib/apt/lists/*
-
-# Expose Mongo port 4567
-EXPOSE      4567
-
-# Run Mongo Server
-ENTRYPOINT  ["/data/db"]
 
 #Get repositories for java8
 RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list
