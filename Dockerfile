@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 #ports
-EXPOSE 4567
+EXPOSE 8080
 EXPOSE 27017
 EXPOSE 28017
 
