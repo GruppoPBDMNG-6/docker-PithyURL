@@ -44,4 +44,4 @@ Per avere un'idea del tipo di funzinalità offerte si può consultare un url di 
 
 N.B. accedendo al server localmente la provenienza del proprio ip proprio ip ovviamente non viene riconosciuta.
 
-![alt tag](http://i.imgur.com/fi9fn4O.png)
+![alt tag](http://oi62.tinypic.com/15fsmtu.jpg)
