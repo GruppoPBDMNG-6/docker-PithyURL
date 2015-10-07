@@ -18,7 +18,6 @@
 
 4. Una volta creata l'immagine, creare il container: 
 <pre>docker run -d --name urlshortener -p 8080:8080 gruppo_pbdmng_6/pithyurl</pre>
-
 In un secondo avvio non sarà necessatio ricreare il container. In tal caso seguire:
 <pre>docker start urlshortener</pre>
 
@@ -27,7 +26,6 @@ In un secondo avvio non sarà necessatio ricreare il container. In tal caso segu
 
 6. Da shell lanciare il comando:
 <pre>./start-server</pre>
-
 Se si chiude il jar lo si può riavviare (senza ricrearlo) tramite:
 <pre>./run-server</pre>
 
