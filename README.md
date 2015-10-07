@@ -48,7 +48,7 @@ Per eseguire soltanto i test JUnit è possibile invece lanciare lo script
 Per accedere al client inserire questo indirizzo nel proprio browser:
 <pre>localhost:8080</pre>
 
-Per avere un'idea del tipo di funzinalità offerte si può consultare un url di test nella sezione "URL Stats" scrivendo "test" e cliccando "inspect!" :
+Per avere un'idea del tipo di funzinalità offerte si può consultare un url di test nella sezione 'URL Stats' scrivendo 'test' e cliccando 'inspect!' :
 
 N.B. accedendo al server localmente la provenienza del proprio ip ovviamente non viene riconosciuta.
 
