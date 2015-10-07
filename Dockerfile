@@ -45,8 +45,20 @@ RUN apt-get install maven -y
 RUN git clone https://github.com/GruppoPBDMNG-6/PithyURL
 
 #create the start server file and make it executable
-RUN echo '#!/bin/bash' >> /start
-RUN echo 'cd /PithyURL/PithyURL' >> /start
-RUN echo 'mvn package' >> /start
-RUN echo 'java -jar target/pithyurl-1.0-SNAPSHOT.jar' >> /start
-RUN chmod 777 /start
+RUN echo '#!/bin/bash' >> /start-server
+RUN echo 'cd /PithyURL/PithyURL' >> /start-server
+RUN echo 'mvn package' >> /start-server
+RUN echo 'java -jar target/pithyurl-1.0-SNAPSHOT.jar' >> /start-server
+RUN chmod 777 /start-server
+
+#execute server without regenerate jar
+RUN echo '#!/bin/bash' >> /run-server
+RUN echo 'cd /PithyURL/PithyURL' >> /run-server
+RUN echo 'java -jar target/pithyurl-1.0-SNAPSHOT.jar' >> /run-server
+RUN chmod 777 /run-server
+
+#create a test script and make it executable
+RUN echo '#!/bin/bash' >> /test-server
+RUN echo 'cd /PithyURL/PithyURL' >> /test-server
+RUN echo 'mvn test' >> /test-server
+RUN chmod 755 /test-server
