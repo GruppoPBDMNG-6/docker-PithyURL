@@ -19,7 +19,7 @@
 4. Una volta creata l'immagine, creare il container: 
 <pre>docker run -d --name urlshortener -p 8080:8080 gruppo_pbdmng_6/pithyurl</pre>
 
-4.5 In un secondo avvio non sarà necessatio ricreare il container. In tal caso seguire:
+In un secondo avvio non sarà necessatio ricreare il container. In tal caso seguire:
 <pre>docker start urlshortener</pre>
 
 5. Entrare nel container:
@@ -28,7 +28,7 @@
 6. Da shell lanciare il comando:
 <pre>./start-server</pre>
 
-6. Se si chiude il jar lo si può riavviare (senza ricrearlo) tramite:
+Se si chiude il jar lo si può riavviare (senza ricrearlo) tramite:
 <pre>./run-server</pre>
 
 Per eseguire soltanto i test JUnit è possibile invece lanciare lo script
