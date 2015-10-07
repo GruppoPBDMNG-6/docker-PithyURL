@@ -40,4 +40,4 @@ Per eseguire soltanto i test JUnit è possibile invece lanciare lo script
 Per accedere al client inserire questo indirizzo nel proprio browser:
 <pre>localhost:8080</pre>
 
-(http://prntscr.com/8oowyo)
+![alt tag](http://prntscr.com/8oowyo)
