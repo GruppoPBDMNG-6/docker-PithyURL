@@ -52,4 +52,4 @@ Per avere un'idea del tipo di funzinalità offerte si può consultare un url di 
 
 N.B. accedendo al server localmente la provenienza del proprio ip ovviamente non viene riconosciuta.
 
-[![alt tag](http://oi62.tinypic.com/15fsmtu.jpg)](/)
+[![alt tag](http://oi62.tinypic.com/15fsmtu.jpg)](https://github.com/GruppoPBDMNG-6/PithyURL/)
