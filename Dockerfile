@@ -60,6 +60,5 @@ RUN chmod 777 /run-server
 #create a test script and make it executable
 RUN echo '#!/bin/bash' >> /test-server
 RUN echo 'cd /PithyURL/PithyURL' >> /test-server
-RUN echo "export MAVEN_OPTS='-Xms384M -Xmx512M -XX:MaxPermSize=256M'" >> /test-server
 RUN echo 'mvn test' >> /test-server
 RUN chmod 755 /test-server
