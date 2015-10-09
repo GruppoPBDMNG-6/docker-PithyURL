@@ -40,7 +40,7 @@ In un secondo avvio non sarà necessario ricreare il container. In tal caso eseg
 Se si chiude il jar lo si può riavviare (senza ricrearlo) tramite:
 <pre>./run-server</pre>
 
-Per eseguire soltanto i test JUnit è possibile invece lanciare lo script
+Per eseguire soltanto i test JUnit è possibile invece lanciare lo script:
 <pre>./test-server</pre>
 
 ###Accesso al client
