@@ -51,5 +51,3 @@ Per accedere al client inserire questo indirizzo nel proprio browser:
 Per avere un'idea del tipo di funzinalità offerte si può consultare un url di test nella sezione `URL Stats` scrivendo `test` e cliccando `inspect!` :
 
 N.B. accedendo al server localmente la provenienza del proprio ip ovviamente non viene riconosciuta.
-
-[![PithyURL](http://oi62.tinypic.com/15fsmtu.jpg)](https://github.com/GruppoPBDMNG-6/PithyURL/)
